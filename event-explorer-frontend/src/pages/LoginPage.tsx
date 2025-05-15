@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-function LoginPage() {
+function LoginPage({ onLogin }: { onLogin: () => void }) {
   const [email, setEmail] = useState('')
   const [pass, setPass] = useState('')
   const [err, setErr] = useState('')
@@ -22,8 +22,7 @@ function LoginPage() {
       const data = await res.json()
       if (data.jwt) {
         localStorage.setItem('token', data.jwt)
-        // just reload for now, later we can redirect
-        window.location.reload()
+        onLogin()
       } else {
         setErr('Login failed. Check your info.')
       }
