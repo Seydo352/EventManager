@@ -145,48 +145,6 @@ function LoginPage({ onLogin }: { onLogin: () => void }) {
             Sign in
           </motion.button>
         </form>
-        
-        <motion.div 
-          style={{ marginTop: '20px', textAlign: 'center' }}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.9 }}
-        >
-          <div style={{ position: 'relative', margin: '20px 0' }}>
-            <div style={{ borderBottom: '1px solid #ccc', position: 'absolute', width: '100%', top: '50%' }}></div>
-            <span style={{ backgroundColor: 'white', padding: '0 10px', position: 'relative', color: '#666' }}>Or continue with</span>
-          </div>
-          
-          <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-            <motion.div 
-              style={{ flex: 1, border: '1px solid #ccc', padding: '20px', margin: '0 5px', backgroundColor: '#eee' }}
-              whileHover={{ y: -5, boxShadow: '0px 5px 10px rgba(0,0,0,0.1)' }}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 1.0 }}
-            >
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/600px-Facebook_Logo_%282019%29.png" alt="Facebook" style={{ width: '40px', height: '40px' }} />
-            </motion.div>
-            <motion.div 
-              style={{ flex: 1, border: '1px solid #ccc', padding: '20px', margin: '0 5px', backgroundColor: '#eee' }}
-              whileHover={{ y: -5, boxShadow: '0px 5px 10px rgba(0,0,0,0.1)' }}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 1.1 }}
-            >
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/150px-Twitter-logo.svg.png" alt="Twitter" style={{ width: '40px', height: '40px' }} />
-            </motion.div>
-            <motion.div 
-              style={{ flex: 1, border: '1px solid #ccc', padding: '20px', margin: '0 5px', backgroundColor: '#eee' }}
-              whileHover={{ y: -5, boxShadow: '0px 5px 10px rgba(0,0,0,0.1)' }}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 1.2 }}
-            >
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/150px-Google_%22G%22_Logo.svg.png" alt="Google" style={{ width: '40px', height: '40px' }} />
-            </motion.div>
-          </div>
-        </motion.div>
       </motion.div>
     </div>
   )
