@@ -1,6 +1,6 @@
 # Event Explorer App
 
-A simple event browser app made with React, TypeScript, and Strapi.
+A simple event browser app made with React, Typescript, Tailwind, Vite and Strapi V4.
 
 ## Setup
 
